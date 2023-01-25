@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/menu_back_gradient2"
+                app:popupTheme="@style/Widget.AppCompat.Toolbar"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout
+
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="?actionBarSize">
+
+    </FrameLayout>
+
+    <com.google.android.material.navigation.NavigationView
+
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:layout_marginEnd="-65dp"
+        android:layout_marginRight="-65dp"
+        >
+
+        <com.github.florent37.materialviewpager.MaterialViewPager
+            android:id="@+id/materialViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="745dp"
+            android:background="#9C9C9C"
+            app:viewpager_animatedHeaderImage="true"
+            app:viewpager_color="@color/colorPrimary"
+            app:viewpager_displayToolbarWhenSwipe="true"
+            app:viewpager_enableToolbarElevation="true"
+            app:viewpager_headerAdditionalHeight="20dp"
+            app:viewpager_headerAlpha="1.0"
+            app:viewpager_headerHeight="250dp"
+            app:viewpager_hideLogoWithFade="false"
+            app:viewpager_hideToolbarAndTitle="true"
+            app:viewpager_imageHeaderDarkLayerAlpha="0.2"
+            app:viewpager_logo="@layout/main_menu_header"
+            app:viewpager_logoMarginTop="80dp"
+            app:viewpager_pagerTitleStrip="@layout/main_manu_tabs"
+            app:viewpager_parallaxHeaderFactor="1.5"
+            app:viewpager_transparentToolbar="false" />
+
+
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

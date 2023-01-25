@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1069865291405",
+    "project_id": "berp-4e1f3",
+    "storage_bucket": "berp-4e1f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069865291405:android:40f22b7abc747b2ff31cc4",
+        "android_client_info": {
+          "package_name": "com.example.berp_and"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069865291405-d50jo16hsg4l3mf2b8j2reiru3b0fqi4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZkiAN67PRfYqROw-K56dK5g9wjyIk5Yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069865291405-d50jo16hsg4l3mf2b8j2reiru3b0fqi4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

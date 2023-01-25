@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".emp.EmpFragment"
+    android:orientation="vertical"
+    android:background="@drawable/app_background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:id="@+id/border_cdv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginVertical="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_face"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/test_face_image"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/view"/>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginVertical="@dimen/dp_10"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_name_emp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이가람 (20120001)"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/tv_dept_position2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="부장 / 마케팅팀팀 / 2012-10-01"
+                    android:textSize="16dp"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+<!--
+
+    <TextView
+        android:layout_toEndOf="@id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:background="@drawable/menu_back_gradient2"
+        android:text="나의 출퇴근 조회"/>
+-->
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="지난 근무 내역"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="20dp"
+            />
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="3dp"
+            android:background="#2d5ba0"
+            android:layout_marginLeft="17dp"/>
+
+
+        <LinearLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:padding="14dp"
+                android:gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="오늘"
+                android:background="@drawable/border_circle2"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tv_work"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="근무"
+                    android:textColor="#2d5ba0"
+                    android:textSize="22dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:text="출근시간 : "/>
+                    <TextView
+                        android:id="@+id/tv_today_workStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="    -"
+                        android:textColor="#41A6B3"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:singleLine="true"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:text="퇴근시간 : "/>
+                    <TextView
+                        android:id="@+id/tv_today_workEnd"
+
+                        android:gravity="start"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="    -"
+                        android:textColor="#5F6FC6"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/view"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/recv_holIndiList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+

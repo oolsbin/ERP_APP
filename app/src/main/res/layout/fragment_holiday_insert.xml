@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:id="@+id/holiday_date"
+        android:layout_width="100dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="날짜 선택"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/linear_WorkCodesearch"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <AutoCompleteTextView
+                android:textColor="#1B1B1B"
+                android:id="@+id/workCode_item_filled_exposed"
+                android:layout_width="159dp"
+                android:layout_height="40dp"
+                android:inputType="none"
+                android:padding="5dp"
+                android:text="연가 종류"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:id="@+id/holiday_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="휴가 시작일 : " />
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:id="@+id/holiday_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="휴가 종료일 : "/>
+
+
+    <!--<com.google.android.material.textfield.TextInputLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/linear_Empsearch"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+    <AutoCompleteTextView
+        android:textColor="#000000"
+        android:id="@+id/emp_item_filled_exposed"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        android:inputType="none"
+        android:textSize="15dp"
+        android:text="연차 종류" />
+    </com.google.android.material.textfield.TextInputLayout>-->
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <Button
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:id="@+id/holiday_insert_btn"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="휴가신청"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

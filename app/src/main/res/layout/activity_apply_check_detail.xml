@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminApply.ApplyCheckDetailActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/app_background"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                app:cardUseCompatPadding="true">
+                <ImageView
+                    android:id="@+id/img_apply_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/test_face_image"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="2"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_apply_detail_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="김예지님"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/tv_apply_detail_email"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="lsb302@naver.com"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tv_apply_detail_phone"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="010-4567-7894"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_back_gradient2"
+            android:text="지원내역"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingLeft="30dp"
+            android:paddingVertical="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border_apply_middle"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv_apply_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[신입모집] 국제직업전문학교 선생님"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                />
+            <View
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/view"/>
+            <TextView
+                android:id="@+id/tv_apply_detail_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C#, JAVA, .NET, C 프로그래밍 개발자\n
+*광주고용센터 채용대행으로 진행합니다. (고용센터에서 서류접수, 확인후 사업장 전달)\n
+*지원자는 접수후 수시 면접 진행되며, 적합자 채용시 조기 마감될 수 있습니다."
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:paddingVertical="5dp"
+                android:background="@drawable/menu_back_gradient2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:text="회사명"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:paddingVertical="5dp"
+                android:layout_weight="2.5"
+                android:background="@drawable/border_apply_middle"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:text="(주) YM NetWork"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:paddingVertical="5dp"
+                android:background="@drawable/menu_back_gradient2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:text="급여"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_apply_detail_salary"
+                android:paddingLeft="10dp"
+                android:paddingVertical="5dp"
+                android:layout_weight="2.5"
+                android:background="@drawable/border_apply_middle"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:text="[연봉] 2800만원"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:paddingVertical="5dp"
+                android:background="@drawable/menu_back_gradient2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:text="직급"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_apply_detail_position"
+                android:paddingLeft="10dp"
+                android:paddingVertical="5dp"
+                android:layout_weight="2.5"
+                android:background="@drawable/border_apply_middle"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:text="신입 / 계약직"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_pass"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="30dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="합격"
+                android:background="@color/common_search"/>
+
+            <Button
+                android:id="@+id/btn_fail"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="30dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="불합격"
+                android:backgroundTint="@color/red"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/linear_code">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+                android:orientation="horizontal">
+
+        <TextView
+            android:background="@color/common_min"
+            android:id="@+id/code_personal"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="인사코드"/>
+
+        <TextView
+            android:id="@+id/code_document"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:text="문서코드"/>
+
+        <TextView
+            android:id="@+id/code_approve"
+            android:background="@color/common_min"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="승인코드"/>
+
+        <TextView
+            android:id="@+id/code_work"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="근무코드"/>
+
+        <!--<TextView
+            android:id="@+id/code_date"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="코드생성일"/>
+
+        <TextView
+            android:id="@+id/code_name"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="코드생성자"/>
+
+
+-->
+
+
+</LinearLayout>
+        <View
+    android:layout_marginHorizontal="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#CCCCCC"/>
+
+</LinearLayout>

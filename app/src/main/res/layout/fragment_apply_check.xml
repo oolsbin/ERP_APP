@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminApply.ApplyCheckFragment"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/app_background"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/linear_applySearch"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/apply_check_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:inputType="none"
+            android:textSize="10dp"
+            android:text="(주)YM NetWork"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/menu_back_gradient2"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="순번"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="1.5dp"
+            android:layout_height="20dp"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="이름"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="1.5dp"
+            android:layout_height="20dp"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_weight="3.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="지원 공고문"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="1.5dp"
+            android:layout_height="20dp"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="날짜"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/recv_applyCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    </LinearLayout>
+</FrameLayout>

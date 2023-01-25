@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginActivity"
+
+   >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/menu_back_gradient2"/>
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/test_login_background"
+        android:scaleType="fitXY"
+        android:alpha="0.7"/>
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"/>
+
+    <RelativeLayout
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="480dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/border_cdv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="LOGIN"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:hint="사번을 입력하세요"
+                android:id="@+id/edt_id"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edge_round"
+                android:paddingLeft="20dp"
+
+                android:textColor="@color/black" />
+
+            <EditText
+                android:hint="비밀번호를 입력하세요"
+                android:id="@+id/edt_pw"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edge_round"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                android:inputType="numberPassword"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/border_button_common_color"
+            android:text="로그인"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_qrLogin"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="90dp"
+            android:background="@drawable/border_button_common_color"
+            android:text="QR 로그인"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:text="Don't have a YM account?\nforget password?"
+            android:textColor="@color/view" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

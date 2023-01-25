@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="14dp"
+            android:id="@+id/tv_workDate"
+            android:gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="12월 5일"
+            android:background="@drawable/border_circle2"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/tv_work"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="근무"
+                android:textColor="#2d5ba0"
+                android:textSize="22dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="출근시간 : "/>
+            <TextView
+                android:id="@+id/tv_workStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:textColor="#41A6B3"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="퇴근시간 : "/>
+            <TextView
+                android:id="@+id/tv_workEnd"
+
+                android:gravity="start"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:textColor="#5F6FC6"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view"/>
+
+
+
+
+
+</LinearLayout>

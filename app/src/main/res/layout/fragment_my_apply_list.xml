@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apply.MyApplyListFragment"
+
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/menu_back_gradient2"/>
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/menu_bar8"
+
+        android:alpha="0.7"/>
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"/>
+
+    <RelativeLayout
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/border_cdv"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_10">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="지원해주셔서 감사합니다"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:hint="이름을 입력하세요"
+                    android:id="@+id/edt_rec_name"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edge_round"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:hint="비밀번호를 입력하세요"
+                    android:id="@+id/edt_rec_pw"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edge_round"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:inputType="numberPassword"/>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_MyApply"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:textColor="@color/white"
+            android:background="@drawable/border_button_common_color"
+            android:text="지원여부 확인하기" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="이름과 비밀번호는 공백없이 입력해주세요\n(주)YM NetWork"
+            android:textColor="@color/view" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

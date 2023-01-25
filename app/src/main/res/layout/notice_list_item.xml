@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginHorizontal="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/lin_notice_list">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+        <View
+            android:layout_marginLeft="30dp"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+/>
+        <TextView
+            android:id="@+id/tv_notice_date"
+            android:background="@drawable/border_circle"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="17일"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <LinearLayout
+            android:id="@+id/linear_notice"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_apply_middle"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notice_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[긴급] 전체 사원 공지 월급 인상 안건 협상결과조회"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="8dp"/>
+            <TextView
+                android:id="@+id/notice_writer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="사원 최인혁"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.HomeFragment"
+    android:background="@drawable/menu_back_gradient2"
+    android:orientation="vertical"
+   >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+
+        >
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/test_background"
+            android:alpha="0.5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/logo"
+                />
+            <LinearLayout
+
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="모바일 앱,\n웹 어플리케이션 제작"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="기획부터 디자인, 개발\n영문 네트워크에서\n연구합니다"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="문의하기"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/white"
+            android:background="@drawable/home_edge_round"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/border_home_backgroune_origin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="30dp"
+            android:text="핵심가치"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:src="@drawable/home_img1"
+                android:layout_marginLeft="5dp"
+                />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:src="@drawable/home_img2"
+                />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:src="@drawable/home_img3"
+                />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:src="@drawable/home_img4"
+                />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_main_img"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</FrameLayout>
